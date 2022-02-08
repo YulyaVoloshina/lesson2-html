@@ -1,15 +1,122 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-      <meta charset="UTF-8">
-      <title>привет! я страничка</title>
-  </head>
-
+<head>
+    <meta charset="UTF-8">
+    <title>The Simpsons</title>
+</head>
 <body>
+ <form id="1form" action="handler.php" method="post">
+  <style>
+   html { height: 100%; }
+   body {
+    margin: 0; /* Убираем отступы */
+    height: 100%; /* Высота страницы */
+    background: url(3.jpg); /* Параметры фона */
+    background-size: cover; /* Фон занимает всю доступную площадь */
+    background-attachment:fixed
+   }
+   p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+   }
+  </style>
 
 
+<h1 align="center"><big><big>The Simpsons</big></big></h1>
+
+<p><strong>Как вас зовут?</strong>
+<input maxlength="25" size="30" value="" form="1form"></p>
+
+<p><strong>Сколько Вам лет?</strong>
+<input maxlength="3" size="10" value="" form="1form"></p>
+
+<p><strong>Ваш любимый персонаж мультфильма?</strong>
+<input maxlength="25" size="30" value="" form="1form"></p>
+
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;Кто из перечисленных героев Симпсон?</h3>
+
+    <p><input id="Homer.name" type="checkbox" form="1form">
+        <label for="Homer.name">Гомер</label></p>
 
 
+    <p><input id="Meggi.name" type="checkbox" form="1form">
+        <label for="Meggi.name">Мэгги</label></p>
+
+    <p><input id="Edna.name" type="checkbox" form="1form">
+        <label for="Edna.name">Эдна</label></p>
+
+    <p><input id="Ned.name" type="checkbox" form="1form" >
+        <label for="Ned.name">Нед</label></p>
+
+    <p><input id="Lisa.name" type="checkbox" form="1form">
+        <label for="Lisa.name">Лиза</label></p>
+
+
+<hr />
+<hr />
+<hr />
+
+                    <p><b>В каком году вышла 1 серия мультфилма</b></p>
+                    <p><input name="1episode" type="radio" value="2000" form="1form"> 2000</p>
+                    <p><input name="1episode" type="radio" value="1989" form="1form"> 1989</p>
+                    <p><input name="1episode" type="radio" value="1991" form="1form"> 1991</p>
+
+<style>
+   h4 {
+    margin-bottom: -1px; /* Отрицательный отступ между заголовком и текстом */
+   }
+  </style>
+
+<h4>«Си́мпсоны» (англ. The Simpsons) — <br /></h4>
+американский мультипликационный сериал в жанре ситуационной комедии, созданный мультипликатором и карикатуристом Мэттом Грейнингом для телекомпании Fox Broadcasting Company. <br /> «Симпсоны» — самый длинный мультсериал в истории американского телевидения, непрерывно выходящий с * года; в сентябре 2021 года началась трансляция 33 сезона сериала. Мультсериал в сатирическом ключе показывает жизнь семейства Симпсонов и других жителей вымышленного городка Спрингфилд , высмеивая многие клише и стереотипы, в частности — стиль жизни «среднего американца», особенности мировых культур в целом, знаменитостей и даже само телевидение и телеканал «Fox». Сериал не стесняется затрагивать такие скользкие вопросы, как политика и религия: в частности, поднимались темы однополых браков, борьбы дарвинистов и креационистов, войны в Ираке, ювенальной юстиции, политкорректности, феминизма, права граждан на оружие, легализации наркотиков и т. п.
+Сериалу предшествовал выпуск нескольких короткометражных мультфильмов, созданных Грейнингом; первая из этих серий «Good night» была показана в «Шоу Трейси Ульман» 19 апреля 1987 года. Демонстрация полноценных серий мультсериала началась 17 декабря * года на канале FOX. Выпускается «Gracie Films» для кинокомпании «20th Century Studios». Мультсериал в настоящее время известен телезрителям более чем в 100 странах. Журнал Time в 1998 году назвал «Симпсонов» лучшим телевизионным сериалом XX века. 27 июля 2007 года в США прошла премьера полнометражного мультфильма с героями сериала, «Симпсоны в кино».
+
+<br />
+<br />
+<hr />
+
+
+<style>
+   h5 {
+    margin-bottom: -15px; /* Отрицательный отступ между заголовком и текстом */
+   }
+  </style>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;Какая фамилия у шефа полиции Спрингфилда?<br /></h5>
+<p><select style="width: 110px;" form="1form">
+    <option>Нед</option>
+    <option>Иванов</option>
+    <option>Виггам</option>
+    <option>Фландерс</option>
+    <option>Симпсон</option>
+</select>
+
+    <style>
+   h5 {
+    margin-bottom: -15px; /* Отрицательный отступ между заголовком и текстом */
+   }
+  </style>
+
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;Что из этого очень любит Гомер?<br /></h5>
+<p><select name="list1" multiple style="width: 150px;" form="1form">
+    <option>Пончик</option>
+    <option>Суп</option>
+    <option>Пиццу</option>
+    <option>Пиво</option>
+    <option>Сельму</option>
+</select></p>
+
+<br />
+<br />
+
+
+ <p><b>Напишите свой отзыв:</b></p>
+<p><textarea style="width: 250px;  height: 150px;" name="comment" form="1form"></textarea></p>
+
+
+<p><input type="submit" value="Отправить все ответы!">
+    <br>
+    <br>
+    <a href="http://localhost:63342/lesson2-html/index2.html?_ijt=oc1tcnt6cb8sm21cbm89s00dh2&_ij_reload=RELOAD_ON_SAVE">Следующая страница</a>
+ </form>
 </body>
 </html>
