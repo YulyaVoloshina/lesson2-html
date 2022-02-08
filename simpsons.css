@@ -1,0 +1,24 @@
+H1 {
+  color: #000080;
+  font-size: 150%;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center;
+}
+table {
+font: Arial, sans-serif 12px/14px fantasy
+}
+ a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+   a:hover {
+    text-decoration: underline; /* Добавляем подчеркивание
+                                   при наведении курсора мыши на ссылку */
+   }
+      A {
+       color: #000; /* Цвет обычной ссылки */
+      }
+      A:visited {
+       color: #000; /* Цвет посещенной ссылки */
+      }
+    A {
+    padding-bottom: 30px}
